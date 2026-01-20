@@ -1,0 +1,8 @@
+baseURL = 'https://jzhoushang.github.io/'
+languageCode = 'en-us'
+title = 'Jason Shang'
+
+[caches]
+    [caches.images]
+    dir = ":cacheDir/images"
+
