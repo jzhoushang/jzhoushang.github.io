@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Jason Shang</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Jason Shang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ping Pong Club Website</title>
+      <link>http://localhost:1313/projects/pingpongsite/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/pingpongsite/</guid>
+      <description>&lt;p&gt;The Ping Pong Club is a non-profit organization based in Concord, MA which raises money for Mass General Hospital and Dana Farber in community ping pong tournaments.&lt;/p&gt;&#xA;&lt;p&gt;As the Chief Technology Officer, I led the development of the organization website from scratch. The project was started from nothing: a small team of myself and another programmer, both having to learn web design from nothing; no previous website or design; and very little direction from a still young club.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
