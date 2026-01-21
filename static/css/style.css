@@ -4,9 +4,20 @@
     --light-primary: #222;
 }
 
+.logo {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
 figure img {
     display: block;
     margin: auto;
+}
+
+em {
+    font-style: italic;
+    color: inherit !important;
 }
 
 a {
@@ -15,6 +26,17 @@ a {
 
 a:hover {
     color: var(--accent-color);
+}
+
+.content-center {
+    height: 100%;
+}
+
+#canvas {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .link[data-theme=dark] {
@@ -57,4 +79,9 @@ a:hover {
     background-color: var(--accent-color);
     width: 100%;
     transform: scaleY(1);
+}
+
+.subtitle {
+    width: 60%;
+    margin: auto;
 }

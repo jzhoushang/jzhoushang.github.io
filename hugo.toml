@@ -18,6 +18,7 @@ enableRobotsTXT = true
     enableThemeToggle = true
 
     customCSS = ["/css/style.css"] 
+    customJS = ["/js/threebody.js"]
 
     [params.logo]
     logoText = "jzhoushang"
