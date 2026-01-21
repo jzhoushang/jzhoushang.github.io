@@ -4,6 +4,11 @@
     --light-primary: #222;
 }
 
+figure img {
+    display: block;
+    margin: auto;
+}
+
 a {
     transition: color 0.5s ease;
 }
