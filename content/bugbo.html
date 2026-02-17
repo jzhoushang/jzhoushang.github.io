@@ -1,0 +1,28 @@
++++
+title = "BugBo"
+description = "Bug identification game"
+date = "2026-02-16"
+author = "Jason Shang"
+scripts = ["js/bugbo.js", "js/dropdown.js"]
+styles = ["css/bugbo.css"]
++++
+
+<div class="bugbo-container">
+    <img class="bugbo-image" id="bugbo-image" />
+    <span class="bugbo-result" id="bugbo-result">
+        Result
+    </span>
+    <form id="bugbo-form">
+        <div class="bugbo-input">
+            <span id="autocomplete"></span>
+            <input type="text" id="bugbo-input" autocomplete="off" placeholder="Guess" />
+        </div>
+        <datalist class="buglist" id="buglist">
+        </datalist>
+    </form>
+    <div class="bugbo-stats">
+        <span>Total: </span><span id="bugbo-total"></span><br>
+        <span>Correct: </span><span id="bugbo-correct"></span><br>
+        <span>Accuracy: </span><span id="bugbo-accuracy"></span><br>
+    </div>
+</div>

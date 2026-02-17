@@ -1,7 +1,15 @@
 :root {
     --accent-color: #fe5186;
-    --dark-primary: #a9a9b3;
-    --light-primary: #222;
+
+    --primary: #222;
+    --secondary: #dcdcdc;
+    --bg-secondary: #fafafa; 
+}
+
+[data-theme=dark] {
+    --primary: #a9a9b3;
+    --secondary: #4e4e57;
+    --bg-secondary: #1b1c1d;
 }
 
 .logo {
@@ -39,15 +47,8 @@ a:hover {
     z-index: -1;
 }
 
-.link[data-theme=dark] {
-    color: var(--dark-primary);
-}
-
-.link[data-theme=light] {
-    color: var(--light-primary);
-}
-
 .link {
+    color: var(--primary);
     display: block;
     text-decoration: none; 
     transition: color 0.3s ease;
@@ -57,14 +58,8 @@ a:hover {
     color: var(--accent-color);
 }
 
-.link[data-theme=dark]::after {
-    background-color: var(--dark-primary);
-}
-
-.link[data-theme=light]::after {
-    background-color: var(--light-primary);
-}
 .link::after {
+    background-color: var(--primary);
     content: "";
     display: block;
     height: 0.1rem;

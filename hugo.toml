@@ -18,7 +18,6 @@ enableRobotsTXT = true
     enableThemeToggle = true
 
     customCSS = ["/css/style.css"] 
-    customJS = ["/js/threebody.js"]
 
     [params.logo]
     logoText = "jzhoushang"
@@ -41,3 +40,7 @@ enableRobotsTXT = true
     name = "Projects"
     url = "/projects/"
  
+    [[menu.main]]
+    identifier = "bugbo"
+    name = "BugBo"
+    url = "/bugbo/"
