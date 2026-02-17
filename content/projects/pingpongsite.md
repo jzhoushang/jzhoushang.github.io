@@ -1,7 +1,7 @@
 +++
 title = "Ping Pong Club Website"
 description = "The website of the CCHS Ping Pong Club"
-date = "2026-01-19"
+date = "2025-12-16"
 categories = ["Webdev"]
 cover = "/img/pingpongsite.png"
 coverCaption = "Screenshot of the Ping Pong Club website home page"
