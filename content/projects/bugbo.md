@@ -12,7 +12,8 @@ BugBo is a somewhat common name for bug identification practice for the Science 
 
 - More specific API search parameters that limit photos to adult photos for insects whose larval forms are not necessary for the Science Olympiad Entomology exam
 - Autocomplete
-- Direct querying of iNaturalist, which offers more control and faster speeds. Other versions I've seen often use a middleman.
+- Direct querying of iNaturalist, which offers more control and faster speeds. Other versions I've seen often use a middleman
+- The ability to enlarge the image
 
 The API used was [iNaturalist](www.inaturalist.org)'s [v1 API](https://api.inaturalist.org/v1/docs/). The list of insects is from the Division C Science Olympiad National Entomology List.
 

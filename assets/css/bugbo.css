@@ -10,6 +10,8 @@
     --green-dark: #5ebe34;
     --red: #fe5186;
     --red-dark: #fe3874;
+
+    --blue: #5186fe;
 }
 
 [data-theme=dark] {
@@ -52,7 +54,7 @@
 }
 
 .bugbo-input:focus-within {
-    outline: 2px solid var(--accent-color);
+    outline: 2px solid var(--blue);
 }
 
 .bugbo-input span, input {
@@ -102,17 +104,17 @@
     position: absolute;
 }
 
-.buglist option {
+.buglist span {
     cursor: pointer;
     display: block;
     padding-left: 0.25em;
 }
 
-.buglist option:hover {
+.buglist span:hover {
     color: var(--accent-color);
 }
 
-.buglist option::after {
+.buglist span::after {
     background-color: var(--primary);
     content: "";
     display: block;
@@ -122,7 +124,7 @@
     transition: 0.5s ease;
 }
 
-.buglist option:hover::after {
+.buglist span:hover::after {
     background-color: var(--accent-color);
     width: 100%;
     transform: scaleY(1);

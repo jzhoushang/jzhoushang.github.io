@@ -6,7 +6,7 @@ const bugs = await fetch("/json/buglist.json")
 
 const buglist = document.getElementById("buglist");
 for (let bug of bugs) {
-    buglist.innerHTML += `<option value="${bug.name}">${bug.name}</option>`
+    buglist.innerHTML += `<span>${bug.name}</option>`
 }
 
 const img = document.getElementById("bugbo-image");

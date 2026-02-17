@@ -22,12 +22,12 @@ function fancyDropdown(inputId, autocompleteId, datalistId) {
         datalist.style.display = "block";
         let hide = true;
         let changed = false;
-        for (let option of datalist.options) {
-            if (matches(option.value, id.value)) {
+        for (let option of datalist.children) {
+            if (matches(option.innerText, id.value)) {
                 option.style.display = "block";
                 hide = false;
                 if (!changed) {
-                    autocomplete.innerText = id.value + option.value.substring(id.value.length);
+                    autocomplete.innerText = id.value + option.innerText.substring(id.value.length);
                     changed = true;
                 }
             } else {
@@ -46,9 +46,9 @@ function fancyDropdown(inputId, autocompleteId, datalistId) {
     id.addEventListener("keydown", e => {
         if (e.key === "Tab") {
             e.preventDefault();
-            for (let option of datalist.options) {
-                if (matches(option.value, id.value)) {
-                    id.value = option.value;
+            for (let option of datalist.children) {
+                if (matches(option.innerText, id.value)) {
+                    id.value = option.innerText;
                     id.dispatchEvent(new Event("input"));
                 }
             }
@@ -56,25 +56,16 @@ function fancyDropdown(inputId, autocompleteId, datalistId) {
     });
 
     id.addEventListener("click", e => {
-        let hide = true;
-        for (let option of datalist.options) {
-            if (window.getComputedStyle(option, null).display == "block") 
-            	hide = false;
-        }
-
-        if (datalist.style.display == "block" || hide) {
-            datalist.style.display = "none";
-        } else {
-            datalist.style.display = "block";
-        }
+        id.dispatchEvent(new Event("input"));
     });
 
 
     document.addEventListener("click", e => {
-        if (e.target.tagName == "OPTION") {
-            id.value = e.target.value;
+        if (e.target.parentElement.id == datalistId) {
+            id.value = e.target.innerText;
+            id.dispatchEvent(new Event("input"));
         }
-        if (e.target.tagName !== "DATALIST" && e.target.tagName !== "INPUT") {
+        if (e.target.id != datalistId && e.target.id != inputId) {
             datalist.style.display = "none";
         }
     });

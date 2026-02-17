@@ -32,6 +32,10 @@
     <link rel="stylesheet" type="text/css" href="{{ .Permalink }}">
 {{ end }}
 
+{{ with resources.Get "js/imgopen.js" | minify | fingerprint }}
+    <script defer src="{{ .Permalink }}"></script>
+{{ end }}
+
 {{ range .Params.styles }}
     {{ $style := resources.Get . | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
