@@ -12,4 +12,3 @@ The three body problem involves three bodies with mass that apply gravitational 
 
 ## Links
 {{< link href="/" text="View the simulation on the home page" >}}
-{{< link href="https://github.com/jzhoushang/jzhoushang.github.io/blob/main/static/js/threebody.js" text="GitHub (single file)" >}}
