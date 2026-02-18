@@ -9,6 +9,7 @@ styles = ["css/bugbo.css"]
 
 <div class="bugbo-container">
     <img class="bugbo-image" id="bugbo-image" />
+    <a class="bugbo-link" id="bugbo-link" href="" target="_blank">Image link</a>
     <span class="bugbo-result" id="bugbo-result">
         Result
     </span>
@@ -20,6 +21,11 @@ styles = ["css/bugbo.css"]
         <datalist class="buglist" id="buglist">
         </datalist>
     </form>
+    <div class="bugbo-buttons">
+        <button id="submit">Submit</button>
+        <button id="reload">Reload</button>
+        <button id="hint">Hint</button>
+    </div>
     <div class="bugbo-stats">
         <span>Total: </span><span id="bugbo-total"></span><br>
         <span>Correct: </span><span id="bugbo-correct"></span><br>

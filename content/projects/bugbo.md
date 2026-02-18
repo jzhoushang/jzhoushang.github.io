@@ -14,6 +14,7 @@ BugBo is a somewhat common name for bug identification practice for the Science 
 - Autocomplete
 - Direct querying of iNaturalist, which offers more control and faster speeds. Other versions I've seen often use a middleman
 - The ability to enlarge the image
+- Finds the image ahead of time and attempts to preload them to provide less delay
 
 The API used was [iNaturalist](www.inaturalist.org)'s [v1 API](https://api.inaturalist.org/v1/docs/). The list of insects is from the Division C Science Olympiad National Entomology List.
 
