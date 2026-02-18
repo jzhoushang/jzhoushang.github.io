@@ -14,7 +14,6 @@ document.addEventListener("click", e => {
 
 overlay.addEventListener("click", e => {
     hidden = true;
-    console.log("clicked image");
     overlay.style.display = "none"; 
 });
 
