@@ -34,8 +34,18 @@
 .bugbo-image {
     height: 50vh;
     width: auto;
-    margin: 1rem;
+    margin: 1rem 1rem 0.25rem;
     border-radius: 4px;
+}
+
+.bugbo-link {
+    margin-top: 0;
+    font-size: 0.75em;
+    color: var(--secondary);
+}
+
+.bugbo-link::after {
+    background-color: var(--secondary) !important;
 }
 
 .bugbo-container form {
@@ -102,6 +112,7 @@
     box-sizing: border-box;
     display: block;
     position: absolute;
+    z-index: 9999;
 }
 
 .buglist span {
@@ -136,7 +147,6 @@
     border-radius: 4px;
     width: 100%;
     margin: 1rem;
-    line-height: 1.15;
     text-align: center;
     font-weight: bold;
 }
@@ -149,6 +159,24 @@
 .result-incorrect {
     background-color: var(--red);
     border-color: var(--red-dark);
+}
+
+.bugbo-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.bugbo-buttons button {
+    width: 5rem;
+    margin: 0.5em;
+    border: 2px solid var(--secondary);
+    background-color: var(--bg-secondary);
+    transition: 0.5s ease;
+}
+
+.bugbo-buttons button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-secondary);
 }
 
 .bugbo-stats {

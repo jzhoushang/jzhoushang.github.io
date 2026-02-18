@@ -33,11 +33,34 @@ em {
 }
 
 a {
-    transition: color 0.5s ease;
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.5s ease;
+    position: relative;
+    display: inline-block;
+}
+
+ .post-content a::after {
+    background-color: var(--primary);
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    bottom: 0.25em;
+    width: 100%;
+    transform: scaleY(1);
+    transition: 0.5s ease; 
+}
+
+a:hover::after {
+    background-color: var(--accent-color);
+    width: 0;
+    transform: scaleY(0);
 }
 
 a:hover {
     color: var(--accent-color);
+    text-decoration: none;
 }
 
 .content-center {
@@ -62,16 +85,15 @@ a:hover {
     color: var(--accent-color);
 }
 
-.link::after {
+.post-content .link::after {
     background-color: var(--primary);
     content: "";
     display: block;
     height: 0.1rem;
+    bottom: 0;
     width: 0;
     transform: scaleY(0);
-    transition: background-color 0.5s ease,
-                width 0.5s ease,
-                transform 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .link:hover::after {
