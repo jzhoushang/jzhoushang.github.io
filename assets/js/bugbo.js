@@ -66,8 +66,7 @@ async function getBlobUrl(url) {
 
 async function getNewBlob() {
     try {
-        //const choice = bugs[Math.floor(Math.random() * (bugs.length))];
-        const choice = bugs[59];
+        const choice = bugs[Math.floor(Math.random() * (bugs.length))];
         let larva = 0
         let without = 0;
         if (choice.hasOwnProperty("larva")) {
