@@ -36,9 +36,9 @@ let savedBlob = {
     natUrl: ""
 };
 
-async function getJson(id, larva) {
+async function getJson(id, larva, without) {
     let page = Math.floor(Math.random() * 10000 + 1);
-    const initialUrl = `${apiEndpoint}&term_value_id=${larva ? larva : 2}&taxon_id=${id}&page=${page}`
+    const initialUrl = `${apiEndpoint}&term_value_id=${larva ? larva : 2}&taxon_id=${id}&page=${page}${without ? `&without_taxon_id=${without}` : ""}`
     const response = await fetch(initialUrl)
     let json = await response.json();
     
@@ -66,13 +66,18 @@ async function getBlobUrl(url) {
 
 async function getNewBlob() {
     try {
-        const choice = bugs[Math.floor(Math.random() * (bugs.length))];
+        //const choice = bugs[Math.floor(Math.random() * (bugs.length))];
+        const choice = bugs[59];
         let larva = 0
+        let without = 0;
         if (choice.hasOwnProperty("larva")) {
             larva = Math.random() > 0.7 ? choice.larva : 0;
         }
+        if (choice.hasOwnProperty("without")) {
+            without = choice.without; 
+        }
 
-        const json = await getJson(choice.id, larva);
+        const json = await getJson(choice.id, larva, without);
 
         const photoUrl = await getPhotoUrl(json); 
         const finalUrl = photoUrl.substring(0, photoUrl.lastIndexOf("/")) + "/original" + photoUrl.substring(photoUrl.lastIndexOf("."));
