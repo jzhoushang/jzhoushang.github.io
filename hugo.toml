@@ -5,42 +5,50 @@ title = 'Jason Shang'
 theme = 'hello-friend-ng'
 enableRobotsTXT = true
 
+[security]
+allowContent = [
+    "text/html",
+    "text/css",
+    "text/markdown",
+    "application/javascript",
+]
+
 [caches]
-    [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ":cacheDir/images"
 
 [params]
-    dateform        = "Jan 2, 2006"
-    dateformShort   = "Jan 2"
-    dateformNum     = "2006-01-02"
-    dateformNumTime = "2006-01-02 15:04"
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
 
-    enableThemeToggle = true
+enableThemeToggle = true
 
-    customCSS = ["/css/style.css"] 
+customCSS = ["/css/style.css"]
 
-    [params.logo]
-    logoText = "jzhoushang"
+[params.logo]
+logoText = "jzhoushang"
 
-    [[params.social]]
-    name = "email"
-    url  = "mailto:jzhoushang@gmail.com"
+[[params.social]]
+name = "email"
+url = "mailto:jzhoushang@gmail.com"
 
-    [[params.social]]
-    name = "github"
-    url  = "https://github.com/jzhoushang"
+[[params.social]]
+name = "github"
+url = "https://github.com/jzhoushang"
 
-    [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/jzhoushang"
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/jzhoushang"
 
 [menu]
-    [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
- 
-    [[menu.main]]
-    identifier = "bugbo"
-    name = "BugBo"
-    url = "/bugbo/"
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+
+[[menu.main]]
+identifier = "bugbo"
+name = "BugBo"
+url = "/bugbo/"
