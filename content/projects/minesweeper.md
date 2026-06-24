@@ -14,5 +14,5 @@ This project isn't very pretty and uses a simple TUI. As it uses `curses`, it ca
 
 ## Links
 
-{{< link href="https://github.com/jzhoushang/minesweeper" text="GitHub" >}}
+{{< link href="https://github.com/jzhoushang/minesweeper" text="Source code on GitHub" >}}
 

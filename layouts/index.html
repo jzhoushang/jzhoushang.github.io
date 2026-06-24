@@ -1,18 +1,18 @@
 {{ define "main" }}
-    <div class="content-center">
-        <canvas id="canvas"></canvas>
-        <main>
+<div class="content-center">
+    <canvas id="canvas"></canvas>
+    <main>
+        <div>
+            <h1>{{ .Site.Title }}</h1>
+
+            <!-- {{ partial "subtitle.html" . }} -->
+
+            {{- with .Site.Params.social }}
             <div>
-                <h1>{{ .Site.Title }}</h1>
-
-                {{ partial "subtitle.html" . }}
-
-                {{- with .Site.Params.social }}
-                    <div>
-                        {{ partial "social-icons.html" . }}
-                    </div>
-                {{- end }}
+                {{ partial "social-icons.html" . }}
             </div>
-        </main>
-    </div>
+            {{- end }}
+        </div>
+    </main>
+</div>
 {{ end }}
