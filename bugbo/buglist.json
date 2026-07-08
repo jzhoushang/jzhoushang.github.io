@@ -1,0 +1,535 @@
+[
+    {
+        "name": "Protura",
+        "id": 83242
+    },
+    {
+        "name": "Collembola",
+        "id": 49470
+    },
+    {
+        "name": "Diplura",
+        "id": 56215
+    },
+    {
+        "name": "Archaeognatha",
+        "id": 461443
+    },
+    {
+        "name": "Zygentoma",
+        "id": 48301
+    },
+    {
+        "name": "Ephemeroptera",
+        "id": 48011,
+        "larva": 5
+    },
+    {
+        "name": "Aeshnidae",
+        "id": 51469,
+        "larva": 5
+    },
+    {
+        "name": "Gomphidae",
+        "id": 51128,
+        "larva": 5
+    },
+    {
+        "name": "Libellulidae",
+        "id": 47819,
+        "larva": 5
+    },
+    {
+        "name": "Lestidae",
+        "id": 47930,
+        "larva": 5
+    },
+    {
+        "name": "Coenagrionidae",
+        "id": 47925,
+        "larva": 5
+    },
+    {
+        "name": "Termitidae",
+        "id": 118902
+    },
+    {
+        "name": "Blattidae",
+        "id": 82232
+    },
+    {
+        "name": "Cryptocercidae",
+        "id": 337962
+    },
+    {
+        "name": "Mantodea",
+        "id": 48112
+    },
+    {
+        "name": "Embioptera",
+        "id": 56834
+    },
+    {
+        "name": "Dermaptera",
+        "id": 47793
+    },
+    {
+        "name": "Plecoptera",
+        "id": 47504,
+        "larva": 5
+    },
+    {
+        "name": "Tetrigidae",
+        "id": 57658
+    },
+    {
+        "name": "Acrididae",
+        "id": 47649
+    },
+    {
+        "name": "Tettigoniidae",
+        "id": 48124
+    },
+    {
+        "name": "Rhaphidophoridae",
+        "id": 61441
+    },
+    {
+        "name": "Gryllidae",
+        "id": 52884
+    },
+    {
+        "name": "Gryllotalpidae",
+        "id": 71220
+    },
+    {
+        "name": "Diapheromeridae",
+        "id": 47320
+    },
+    {
+        "name": "Psocodea",
+        "id": 83187
+    },
+    {
+        "name": "Corixidae",
+        "id": 84735
+    },
+    {
+        "name": "Notonectidae",
+        "id": 56556
+    },
+    {
+        "name": "Belostomatidae",
+        "id": 81570
+    },
+    {
+        "name": "Nepidae",
+        "id": 119347
+    },
+    {
+        "name": "Gelastocoridae",
+        "id": 53499
+    },
+    {
+        "name": "Gerridae",
+        "id": 59653
+    },
+    {
+        "name": "Cimicidae",
+        "id": 53667
+    },
+    {
+        "name": "Miridae",
+        "id": 53505
+    },
+    {
+        "name": "Reduviidae",
+        "id": 48959
+    },
+    {
+        "name": "Scutelleridae",
+        "id": 49525
+    },
+    {
+        "name": "Tingidae",
+        "id": 53506
+    },
+    {
+        "name": "Lygaeidae",
+        "id": 55558
+    },
+    {
+        "name": "Coreidae",
+        "id": 51777
+    },
+    {
+        "name": "Pentatomidae",
+        "id": 47742
+    },
+    {
+        "name": "Cicadidae",
+        "id": 50186,
+        "larva": 5
+    },
+    {
+        "name": "Membracidae",
+        "id": 49024
+    },
+    {
+        "name": "Cercopidae",
+        "id": 61863
+    },
+    {
+        "name": "Cicadellidae",
+        "id": 53237
+    },
+    {
+        "name": "Fulgoridae",
+        "id": 54944
+    },
+    {
+        "name": "Aphididae",
+        "id": 52381
+    },
+    {
+        "name": "Pseudococcidae",
+        "id": 49574,
+        "larva": 5
+    },
+    {
+        "name": "Coccidae",
+        "id": 49456,
+        "larva": 5
+    },
+    {
+        "name": "Thysanoptera",
+        "id": 83201
+    },
+    {
+        "name": "Megaloptera",
+        "id": 47864,
+        "larva": 6
+    },
+    {
+        "name": "Chrysopidae",
+        "id": 52425
+    },
+    {
+        "name": "Myrmeleontidae",
+        "id": 49358,
+        "larva": 6
+    },
+    {
+        "name": "Carabidae",
+        "id": 49567
+    },
+    {
+        "name": "Dytiscidae",
+        "id": 57659
+    },
+    {
+        "name": "Gyrinidae",
+        "id": 119971
+    },
+    {
+        "name": "Hydrophilidae",
+        "id": 127444
+    },
+    {
+        "name": "Psephenidae",
+        "id": 143858,
+        "larva": 6
+    },
+    {
+        "name": "Elmidae",
+        "id": 85753,
+        "larva": 6
+    },
+    {
+        "name": "Histeridae",
+        "id": 68869
+    },
+    {
+        "name": "Staphylinidae",
+        "id": 47951,
+        "without": 1642609
+    },
+    {
+        "name": "Silphidae",
+        "id": 1642609
+    },
+    {
+        "name": "Lucanidae",
+        "id": 49083
+    },
+    {
+        "name": "Passalidae",
+        "id": 84443
+    },
+    {
+        "name": "Scarabaeidae",
+        "id": 48201
+    },
+    {
+        "name": "Buprestidae",
+        "id": 54964
+    },
+    {
+        "name": "Elateridae",
+        "id": 53248,
+        "larva": 6
+    },
+    {
+        "name": "Lampyridae",
+        "id": 47731,
+        "larva": 6
+    },
+    {
+        "name": "Cantharidae",
+        "id": 52932
+    },
+    {
+        "name": "Lycidae",
+        "id": 49360
+    },
+    {
+        "name": "Cleridae",
+        "id": 55051
+    },
+    {
+        "name": "Coccinellidae",
+        "id": 48486,
+        "larva": 6
+    },
+    {
+        "name": "Tenebrionidae",
+        "id": 53816,
+        "larva": 6
+    },
+    {
+        "name": "Meloidae",
+        "id": 59510
+    },
+    {
+        "name": "Cerambycidae",
+        "id": 47961,
+        "larva": 6
+    },
+    {
+        "name": "Chrysomelidae",
+        "id": 51146
+    },
+    {
+        "name": "Curculionidae",
+        "id": 48736
+    },
+    {
+        "name": "Zopheridae",
+        "id": 47592
+    },
+    {
+        "name": "Cucujidae",
+        "id": 85716,
+        "larva": 6
+    },
+    {
+        "name": "Boreidae",
+        "id": 173350
+    },
+    {
+        "name": "Panorpidae",
+        "id": 51700
+    },
+    {
+        "name": "Raphidiidae",
+        "id": 60052
+    },
+    {
+        "name": "Siphonaptera",
+        "id": 83204
+    },
+    {
+        "name": "Tipulidae",
+        "id": 51225,
+        "larva": 6
+    },
+    {
+        "name": "Culicidae",
+        "id": 52134,
+        "larva": 6
+    },
+    {
+        "name": "Chironomidae",
+        "id": 53275,
+        "larva": 6
+    },
+    {
+        "name": "Simuliidae",
+        "id": 63164
+    },
+    {
+        "name": "Stratiomyidae",
+        "id": 70127
+    },
+    {
+        "name": "Tabanidae",
+        "id": 47821
+    },
+    {
+        "name": "Asilidae",
+        "id": 47982
+    },
+    {
+        "name": "Bombyliidae",
+        "id": 51558
+    },
+    {
+        "name": "Syrphidae",
+        "id": 49995,
+        "larva": 6
+    },
+    {
+        "name": "Tephritidae",
+        "id": 47990
+    },
+    {
+        "name": "Drosophilidae",
+        "id": 67742
+    },
+    {
+        "name": "Muscidae",
+        "id": 70144
+    },
+    {
+        "name": "Calliphoridae",
+        "id": 61860,
+        "larva": 6
+    },
+    {
+        "name": "Tachinidae",
+        "id": 51953
+    },
+    {
+        "name": "Oestridae",
+        "id": 154882,
+        "larva": 6
+    },
+    {
+        "name": "Trichoptera",
+        "id": 62164,
+        "larva": 6
+    },
+    {
+        "name": "Sesiidae",
+        "id": 51573
+    },
+    {
+        "name": "Tortricidae",
+        "id": 47155
+    },
+    {
+        "name": "Hesperiidae",
+        "id": 47653
+    },
+    {
+        "name": "Papilionidae",
+        "id": 47223,
+        "larva": 6
+    },
+    {
+        "name": "Pieridae",
+        "id": 48508
+    },
+    {
+        "name": "Lycaenidae",
+        "id": 47923
+    },
+    {
+        "name": "Nymphalidae",
+        "id": 47922,
+        "larva": 6
+    },
+    {
+        "name": "Geometridae",
+        "id": 49530
+    },
+    {
+        "name": "Lasiocampidae",
+        "id": 56584,
+        "larva": 6
+    },
+    {
+        "name": "Pyralidae",
+        "id": 49683
+    },
+    {
+        "name": "Saturniidae",
+        "id": 47918
+    },
+    {
+        "name": "Sphingidae",
+        "id": 47213,
+        "larva": 6
+    },
+    {
+        "name": "Erebidae",
+        "id": 121850,
+        "larva": 6
+    },
+    {
+        "name": "Noctuidae",
+        "id": 48670
+    },
+    {
+        "name": "Tenthredinidae",
+        "id": 60628
+    },
+    {
+        "name": "Siricidae",
+        "id": 53256
+    },
+    {
+        "name": "Ichneumonidae",
+        "id": 47199
+    },
+    {
+        "name": "Cynipidae",
+        "id": 55594
+    },
+    {
+        "name": "Mutillidae",
+        "id": 48511
+    },
+    {
+        "name": "Formicidae",
+        "id": 47336
+    },
+    {
+        "name": "Vespidae",
+        "id": 52747
+    },
+    {
+        "name": "Sphecidae",
+        "id": 48742
+    },
+    {
+        "name": "Braconidae",
+        "id": 63187
+    },
+    {
+        "name": "Halictidae",
+        "id": 49707
+    },
+    {
+        "name": "Megachilidae",
+        "id": 52777
+    },
+    {
+        "name": "Apidae",
+        "id": 47221
+    },
+    {
+        "name": "Ixodidae",
+        "id": 51673
+    }
+]

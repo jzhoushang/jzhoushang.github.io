@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Shang</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <script defer src="/scroller.js"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/849fee17de.js" crossorigin="anonymous"></script>
+
+    <!-- Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script defer src="/protein.js" type="module"></script>
+</head>
+
+<body>
+    <div class="scroll-container">
+        <div class="page">
+            <div class="about">
+                <div class="about-content">
+                    <h1 class="name">Jason Shang</h1>
+                    <h2 class="title">Aspiring Computational Biologist</h2>
+                    <!-- <p class="quote">"What I cannot create, I do not understand."<br><em>- Richard Feynman</em></br></p> -->
+                    <div class="socials">
+                        <a class="social-link" href="mailto:jzhoushang@gmail.com">
+                            <i class="fa-solid fa-envelope"></i></i>
+                            <span class="social-name">jzhoushang&#64gmail&#46com</span>
+                        </a>
+                        <a class="social-link" href="https://github.com/jzhoushang">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="social-name">jzhoushang</span>
+                        </a>
+                        <a class="social-link" href="https://linkedin.com/in/jzhoushang">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="social-name">jzhoushang</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="sim-container" class="sim-container">
+                <div class="hints">
+                    <span class="rotate-hint" id="rotate-hint">Use left click to rotate, scroll wheel to zoom, and right
+                        click to move to explore the protein.</span>
+                    <a class="read-more" href="https://github.com/jzhoushang/web-protein-sim">READ MORE
+                        <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <!-- <canvas class="three-body" id="canvas"></canvas> -->
+            </div>
+        </div>
+        <div class="page">
+            <div class="projects">
+                <h1 class="title">Projects</h1>
+                <div class="projects-list">
+                    <div class="project">
+                        <a href="https://github.com/jzhoushang/web-protein-sim">
+                            <div class="project-text">
+                                <h2 class="project-title">Protein Simulation</h2>
+                                <span>Coarse-grained, three-dimensional protein simulation, using point-like amino acids
+                                    and simplified forces to achieve results visually similar to real proteins with low
+                                    complexity calculations.
+                                    <br><br>
+                                    The project is in JavaScript, using the Three.js library for rendering. It was
+                                    designed to be visually interesting and easily viewable by web to serve as the front
+                                    of this personal website.
+                                </span>
+                            </div>
+                            <img src="/protein/thumbnail.png">
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="https://pingpongclub.org/">
+                            <div class="project-text">
+                                <h2 class="project-title">Emerson Table Tennis Foundation Website</h2>
+                                <span>Website for the Emerson Table Tennis Foundation, a student-ran non-profit
+                                    organization which raises money for Alzheimer's research at Mass General Hospital
+                                    and cancer research at Dana-Farber.
+                                    <br><br>
+                                    The website built from scratch using the Hugo static site generator. The
+                                    organization's online presence provides information about upcoming events,
+                                    tournament results, and an online store used to sell merchandise.
+                                </span>
+                            </div>
+                            <img src="/pingpong/thumbnail.png">
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="/bugbo">
+                            <div class="project-text">
+                                <h2 class="project-title">BugBo</h2>
+                                <span>
+                                    Online study tool for insect identification using the iNaturalist API made for the
+                                    Science Olympiad's Entomology event.
+                                    <br><br>
+                                    The project is in pure HTML, CSS, and JavaScript to be easily accessible and
+                                    shareable through GitHub Pages, which helped teammates practice. It was designed
+                                    with many features to maximize the rate of identification, including autocomplete,
+                                    image preloading, and the ability to enlarge the images.
+                                </span>
+                            </div>
+                            <img src="/bugbo/thumbnail_512.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scroll-indicator" class="scroll-indicator">
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+</body>
+
+</html>

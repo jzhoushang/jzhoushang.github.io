@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugBo</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="./bugbo.css" type="text/css">
+    <script defer type="module" src="./bugbo.js"></script>
+    <script defer src="./imgopen.js"></script>
+    <script defer src="./dropdown.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/849fee17de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="back">
+        <a href="/"><i class="fa-regular fa-house"></i></a>
+        <a href="./about"><i class="fa-regular fa-newspaper"></i></a>
+    </div>
+    <div class="overlay" id="overlay">
+        <img class="overlay-image" id="overlay-image" />
+    </div>
+    <div class="container">
+        <div class="bugbo-container">
+            <img class="bugbo-image" id="bugbo-image" />
+            <a class="bugbo-link" id="bugbo-link" href="" target="_blank">Image link</a>
+            <span class="bugbo-result" id="bugbo-result">
+                Result
+            </span>
+            <form id="bugbo-form">
+                <div class="bugbo-input">
+                    <span id="autocomplete"></span>
+                    <input type="text" id="bugbo-input" autocomplete="off" placeholder="Guess" />
+                </div>
+                <datalist class="buglist" id="buglist">
+                </datalist>
+            </form>
+            <div class="bugbo-buttons">
+                <button id="submit">Submit</button>
+                <button id="reload">Reload</button>
+                <button id="hint">Hint</button>
+            </div>
+            <div class="bugbo-stats">
+                <span>Total: </span><span id="bugbo-total"></span><br>
+                <span>Correct: </span><span id="bugbo-correct"></span><br>
+                <span>Accuracy: </span><span id="bugbo-accuracy"></span><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

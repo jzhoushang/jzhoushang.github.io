@@ -1,0 +1,234 @@
+:root {
+    --background: #1c1c21;
+    --bg-secondary: #3f3f4a;
+    --bg-deep: #101013;
+    --space: #050505;
+    --primary: #f6f6f7;
+    --secondary: #9595a6;
+
+    --green: #356520;
+    --green-dark: #254717;
+    --red: #652035;
+    --red-dark: #521a2b;
+}
+
+* {
+    font-size: 1em;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    cursor: pointer;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.5s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    z-index: 9999;
+}
+
+.overlay-image {
+    max-width: 75%;
+    max-height: 90%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.overlay-close {
+    background-color: transparent !important;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.bugbo-container {
+    display: grid;
+    place-items: center;
+    width: 70%;
+}
+
+.bugbo-image {
+    height: 50vh;
+    width: auto;
+    margin: 1rem 1rem 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.bugbo-link {
+    margin-top: 0;
+    font-size: 0.75em;
+    color: var(--secondary);
+}
+
+.bugbo-link::after {
+    background-color: var(--secondary) !important;
+}
+
+.bugbo-container form {
+    width: 100%;
+}
+
+.bugbo-input {
+    border: 2px solid var(--secondary);
+    background-color: var(--bg-deep);
+    color: var(--primary);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.2s ease;
+}
+
+.bugbo-input:focus-within {
+    outline: 2px solid var(--blue);
+}
+
+.bugbo-input span,
+input {
+    margin: 0;
+    padding: 0;
+    padding-left: 0.25em;
+    font-size: 1rem;
+    font-feature-settings: "calt" off;
+    letter-spacing: normal;
+    font-kerning: none;
+    align-self: end;
+}
+
+.bugbo-input input {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    z-index: 10;
+    color: var(--primary);
+    font-family: "Fira Sans", sans-serif;
+}
+
+.bugbo-input input::placeholder {
+    color: var(--secondary);
+}
+
+.bugbo-input input:focus {
+    outline: none;
+    color: var(--primary);
+}
+
+.bugbo-input span {
+    position: absolute;
+    color: var(--secondary);
+}
+
+.buglist {
+    background-color: var(--bg-deep);
+    padding: 0.25em;
+    border: 2px solid var(--secondary);
+    border-radius: 4px;
+    margin-top: 0.25em;
+
+    max-height: 10em;
+
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: 9999;
+}
+
+.buglist span {
+    cursor: pointer;
+    display: block;
+    padding-left: 0.25em;
+    background-color: var(--bg-deep);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.buglist span:hover {
+    background-color: var(--bg-secondary);
+}
+
+.bugbo-result {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.result-correct {
+    background-color: var(--green);
+    border-color: var(--green-dark);
+}
+
+.result-incorrect {
+    background-color: var(--red);
+    border-color: var(--red-dark);
+}
+
+.bugbo-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.bugbo-buttons button {
+    margin: 1em;
+    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 7em;
+
+    border: 2px solid var(--secondary);
+    background-color: var(--bg-deep);
+    color: var(--primary);
+    transition: 0.5s ease;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.bugbo-buttons button:hover {
+    background-color: var(--primary);
+    color: var(--bg-deep);
+}
+
+.bugbo-stats {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    line-height: 1.5;
+}
+
+.logo {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
