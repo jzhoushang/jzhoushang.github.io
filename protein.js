@@ -17,8 +17,11 @@ controls.autoRotateSpeed = 1.0;
 controls.update();
 controls.addEventListener('start', () => {
     controls.autoRotate = false;
-    document.getElementById("rotate-hint").style.opacity = 0.0;
 });
+
+container.addEventListener("autorotate", () => {
+    controls.autoRotate = true;
+})
 
 const clock = new THREE.Clock();
 const framerateClock = new THREE.Clock();
@@ -32,9 +35,9 @@ scene.add(ambientLight);
 const keyLight = new THREE.DirectionalLight(0xffffff, 5.0);
 scene.add(keyLight);
 
-const red = "#fe5186";
-const blue = "#5186fe";
-const green = "#86fe51";
+const red = "#ff729f";
+const blue = "#567af9";
+const green = "#81f4e1";
 const bondRadius = 0.2;
 const aaRadius = 1.9; // Angstrom
 

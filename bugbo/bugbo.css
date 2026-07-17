@@ -1,6 +1,6 @@
 :root {
-    --background: #1c1c21;
-    --bg-secondary: #3f3f4a;
+    --background: #101013;
+    --bg-secondary: #050505;
     --bg-deep: #101013;
     --space: #050505;
     --primary: #f6f6f7;
@@ -10,6 +10,8 @@
     --green-dark: #254717;
     --red: #652035;
     --red-dark: #521a2b;
+
+    --accent: #ff729f;
 }
 
 * {
@@ -126,7 +128,7 @@ input {
     width: 100%;
     z-index: 10;
     color: var(--primary);
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bugbo-input input::placeholder {
@@ -212,11 +214,11 @@ input {
     color: var(--primary);
     transition: 0.5s ease;
 
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .bugbo-buttons button:hover {
-    background-color: var(--primary);
+    background-color: var(--accent);
     color: var(--bg-deep);
 }
 

@@ -1,14 +1,59 @@
 const pages = document.getElementsByClassName("page");
 const scrollIndicator = document.getElementById("scroll-indicator");
+const scrollIndicator2 = document.getElementById("scroll-indicator-2");
+const scrollIndicator3 = document.getElementById("scroll-indicator-3");
+const hints = document.getElementById("hints")
+
+const simContainer = document.getElementById("sim-container");
+
 let isScrolling = false;
 let target = 0;
+
+scrollIndicator.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    target = pages[1].offsetTop;
+    window.scrollTo({
+        top: pages[1].offsetTop,
+        behavior: "smooth"
+    });
+    isScrolling = true;
+
+    simContainer.dispatchEvent(new Event("autorotate"));
+    scrollIndicator.style.opacity = 0.0;
+    hints.style.opacity = 0.0;
+});
+
+scrollIndicator2.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    target = 0;
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    isScrolling = true;
+});
+
+scrollIndicator3.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    target = pages[2].offsetTop;
+    window.scrollTo({
+        top: pages[2].offsetTop,
+        behavior: "smooth"
+    });
+    isScrolling = true;
+});
 
 const deadzone = (a, b, deadzone) => {
     return Math.abs(a - b) < deadzone;
 }
 
 const onwheel = (e) => {    
-    if (document.getElementById("sim-container").matches(":hover")) {
+    if (simContainer.matches(":hover")) {
+        e.preventDefault();
+        simContainer.dispatchEvent(new Event("scroll", e));
         return;
     }
 
@@ -35,11 +80,6 @@ const onwheel = (e) => {
 
     let dir = deltaY < 0 ? -1 : 1;
 
-    if (dir == -1 && window.scrollY == 0) {
-        e.preventDefault();
-        return;
-    }
-
     if (dir == -1 && window.scrollY + deltaY < pages[1].offsetTop + 1) {
         e.preventDefault();
 
@@ -51,10 +91,14 @@ const onwheel = (e) => {
         
         isScrolling = true;
 
+        simContainer.dispatchEvent(new Event("autorotate"));
+        scrollIndicator.style.opacity = 1.0;
+        hints.style.opacity = 1.0;
+
         return;
     }
 
-    if (dir == 1 && window.scrollY < pages[1].offsetTop - 1) {
+    if (dir == -1 && window.scrollY + deltaY < pages[2].offsetTop + 1) {
         e.preventDefault();
 
         target = pages[1].offsetTop;
@@ -63,7 +107,28 @@ const onwheel = (e) => {
             behavior: "smooth"
         });
 
-        scrollIndicator.style.opacity = 0.0;
+        isScrolling = true;
+        
+        return;
+    }
+
+    if (dir == 1 && window.scrollY < pages[1].offsetTop - 1) {
+        console.log("hello world!")
+        e.preventDefault();
+        scrollIndicator.dispatchEvent(new Event("click"))
+
+        return;
+    }
+
+
+    if (dir == 1 && window.scrollY < pages[2].offsetTop - 1) {
+        e.preventDefault();
+
+        target = pages[2].offsetTop;
+        window.scrollTo({
+            top: pages[2].offsetTop,
+            behavior: "smooth"
+        });
 
         isScrolling = true;
         
@@ -72,3 +137,4 @@ const onwheel = (e) => {
 };
 
 window.addEventListener("wheel", onwheel, { passive: false });
+window.addEventListener("resize", (e) => { isScrolling = false; });
