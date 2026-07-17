@@ -9,42 +9,40 @@ const simContainer = document.getElementById("sim-container");
 let isScrolling = false;
 let target = 0;
 
-scrollIndicator.addEventListener("click", (e) => {
-    e.preventDefault();
+const scrollButton = (scrollTo, callback) => {
+    return (e) => {
+        if (isScrolling) {
+            if (deadzone(window.scrollY, target, 1)) {
+                isScrolling = false;
+            } else {
+                return;
+            }
+        }
 
-    target = pages[1].offsetTop;
-    window.scrollTo({
-        top: pages[1].offsetTop,
-        behavior: "smooth"
-    });
-    isScrolling = true;
+        target = scrollTo;
+        window.scrollTo({
+            top: scrollTo,
+            behavior: "smooth"
+        });
+        isScrolling = true;
 
+        if (callback) callback();
+    }
+}
+
+scrollIndicator.addEventListener("click", scrollButton(pages[1].offsetTop, () => {
     simContainer.dispatchEvent(new Event("autorotate"));
     scrollIndicator.style.opacity = 0.0;
     hints.style.opacity = 0.0;
-});
+}));
 
-scrollIndicator2.addEventListener("click", (e) => {
-    e.preventDefault();
+scrollIndicator2.addEventListener("click", scrollButton(0, () => {
+    simContainer.dispatchEvent(new Event("autorotate"));
+    scrollIndicator.style.opacity = 1.0;
+    hints.style.opacity = 1.0;
+}));
 
-    target = 0;
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-    isScrolling = true;
-});
-
-scrollIndicator3.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    target = pages[2].offsetTop;
-    window.scrollTo({
-        top: pages[2].offsetTop,
-        behavior: "smooth"
-    });
-    isScrolling = true;
-});
+scrollIndicator3.addEventListener("click", scrollButton(pages[2].offsetTop));
 
 const deadzone = (a, b, deadzone) => {
     return Math.abs(a - b) < deadzone;
@@ -83,17 +81,7 @@ const onwheel = (e) => {
     if (dir == -1 && window.scrollY + deltaY < pages[1].offsetTop + 1) {
         e.preventDefault();
 
-        target = 0;
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-        
-        isScrolling = true;
-
-        simContainer.dispatchEvent(new Event("autorotate"));
-        scrollIndicator.style.opacity = 1.0;
-        hints.style.opacity = 1.0;
+        scrollIndicator2.dispatchEvent(new Event("click"));
 
         return;
     }
