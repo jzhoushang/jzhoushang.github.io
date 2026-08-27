@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 
 .logo {
     height: 5rem;
-    color: var(--primary);
+    color: var(--foreground);
 }
 
 .name {
@@ -205,7 +205,7 @@ body::-webkit-scrollbar {
 }
 
 .social-link:hover {
-    color: var(--primary);
+    color: var(--foreground);
 }
 
 .sim-container {
@@ -381,19 +381,26 @@ body::-webkit-scrollbar {
     gap: 1rem;
 }
 
-.project img {
-    display: block;
-    object-fit: contain;
-    aspect-ratio: 1/1 auto;
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 25%;
     max-height: 100%;
     width: auto;
+    height: auto;
+}
+
+.project-img img {
+    display: block;
+    aspect-ratio: 1/1 auto;
+    width: 100%;
     height: auto;
     border-radius: 0.5rem;
 }
 
 @media (max-width: 767px) {
-    .project img {
+    .project-img img {
         display: none;
     }
 }
@@ -479,5 +486,5 @@ body::-webkit-scrollbar {
 }
 
 .back a:hover {
-    color: var(--primary);
+    color: var(--foreground);
 }
